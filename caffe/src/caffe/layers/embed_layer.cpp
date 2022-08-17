@@ -51,11 +51,7 @@ void EmbedLayer<Dtype>::Reshape(const vector<Blob<Dtype>*>& bottom,
   // Figure out the dimensions
   M_ = bottom[0]->count();
   vector<int> top_shape = bottom[0]->shape();
-  if (top_shape.back() == 1){
-    top_shape.back() = N_;
-  } else {
-    top_shape.push_back(N_);
-  }
+  top_shape.push_back(N_);
   top[0]->Reshape(top_shape);
   // Set up the bias multiplier
   if (bias_term_) {

@@ -70,9 +70,6 @@ models/*
 *.binaryproto
 *leveldb
 *lmdb
-*.pkl
-
-caffe/.build_release/*
 
 # build, distribute, and bins (+ python proto bindings)
 build

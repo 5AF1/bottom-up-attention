@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <vector>
 
 #include "caffe/layers/sigmoid_cross_entropy_loss_layer.hpp"
