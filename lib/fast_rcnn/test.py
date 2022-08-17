@@ -219,7 +219,7 @@ def vis_detections(im, class_name, dets, thresh=0.3, filename='vis.png'):
 def vis_multiple(im, class_names, all_boxes, filename='vis.png'):
     """Visual debugging of detections."""
     
-    print filename
+    print(filename)
     import matplotlib.pyplot as plt
     im = im[:, :, (2, 1, 0)]
     plt.cla()
